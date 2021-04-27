@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  /**
+   *
+   */
+  constructor() {
+  }
+
+  loadedFeature = 'recipe';
+  goToNavigate(option: string) {
+    this.loadedFeature = option;
+  }
 }
