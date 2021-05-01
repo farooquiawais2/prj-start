@@ -28,6 +28,9 @@
       <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
       </ng-template>
+      <ng-template [ngIf]="onlyOdd">
+        <li *ngFor="let no of oddNumbers">{{no}}</li>
+      </ng-template>
       <p appBasicHighlight>Style me with a basic directive</p>
       <p [appBetterHighlight]="'red'" defaultColor="yellow">Style me with a basic directive</p>
     </div>
